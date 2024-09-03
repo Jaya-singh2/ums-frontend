@@ -1,17 +1,17 @@
 import React, { useRef, useCallback, useState } from 'react';
 import Webcam from 'react-webcam';
 import jsPDF from 'jspdf';
-//import html2canvas from 'html2canvas';
-
-const videoConstraints = {
-  width: 1280,
-  height: 720,
-  facingMode: 'user',
-};
 
 const Scanner = () => {
   const webcamRef = useRef(null);
   const [images, setImages] = useState([]);
+  const [facingMode, setFacingMode] = useState('environment'); // Start with back camera
+
+  const videoConstraints = {
+    width: 1280,
+    height: 720,
+    facingMode: facingMode, // Use the state value for facingMode
+  };
 
   const capture = useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
@@ -31,6 +31,10 @@ const Scanner = () => {
     pdf.save('scanned.pdf');
   };
 
+  const toggleCamera = () => {
+    setFacingMode((prevMode) => (prevMode === 'user' ? 'environment' : 'user'));
+  };
+
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h1 style={{ textAlign: 'center' }}>A4 Document Scanner</h1>
@@ -43,12 +47,18 @@ const Scanner = () => {
           style={{ width: '100%', maxWidth: '600px', borderRadius: '10px', border: '2px solid #ccc' }}
         />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
         <button 
           onClick={capture} 
           style={{ padding: '10px 20px', fontSize: '16px', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
         >
           Capture Photo
+        </button>
+        <button
+          onClick={toggleCamera}
+          style={{ padding: '10px 20px', fontSize: '16px', backgroundColor: '#ffc107', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
+        >
+          Switch Camera
         </button>
       </div>
 
