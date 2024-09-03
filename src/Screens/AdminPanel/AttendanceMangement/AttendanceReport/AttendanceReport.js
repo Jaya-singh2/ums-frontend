@@ -7,21 +7,16 @@ const AttendanceReport = () => {
   const [selectedSemYear, setSelectedSemYear] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
   const [selectedRollNumber, setSelectedRollNumber] = useState('');
-  const [students, setStudents] = useState([
+  const [students] = useState([
     { rollNumber: '101', name: 'John Doe', course: 'Course 1', semYear: '1st Year', subject: 'Subject 1', totalAttendance: '8 out of 10', percentage: '85%' },
     { rollNumber: '102', name: 'Jane Smith', course: 'Course 2', semYear: '2nd Year', subject: 'Subject 2', totalAttendance: '9 out of 10', percentage: '90%' },
     { rollNumber: '103', name: 'Alice Johnson', course: 'Course 1', semYear: '1st Year', subject: 'Subject 1', totalAttendance: '6 out of 10', percentage: '78%' },
     { rollNumber: '104', name: 'Bob Brown', course: 'Course 2', semYear: '2nd Year', subject: 'Subject 2', totalAttendance: '7 out of 10', percentage: '82%' }
   ]);
-  
-  const [resultsDeclared, setResultsDeclared] = useState(false);
+
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
-  };
-
-  const handleDeclareResult = () => {
-    setResultsDeclared(true);
   };
 
   const handleChange = (e) => {

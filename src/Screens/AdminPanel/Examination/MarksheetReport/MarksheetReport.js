@@ -7,7 +7,7 @@ const MarksheetReport = () => {
   const [selectedSemYear, setSelectedSemYear] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('');
   const [selectedRollNumber, setSelectedRollNumber] = useState('');
-  const [students, setStudents] = useState([
+  const [students] = useState([
     { rollNumber: '101', name: 'John Doe', course: 'Course 1', semYear: '1st Year', subject: 'Subject 1', totalMarks: 100, marksObtained: 85 },
     { rollNumber: '102', name: 'Jane Smith', course: 'Course 2', semYear: '2nd Year', subject: 'Subject 2', totalMarks: 100, marksObtained: 90 },
     { rollNumber: '103', name: 'Alice Johnson', course: 'Course 1', semYear: '1st Year', subject: 'Subject 1', totalMarks: 100, marksObtained: 78 },

@@ -1,7 +1,7 @@
 import React, { useRef, useCallback, useState } from 'react';
 import Webcam from 'react-webcam';
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
+//import html2canvas from 'html2canvas';
 
 const videoConstraints = {
   width: 1280,
@@ -59,7 +59,7 @@ const Scanner = () => {
             <img 
               key={index} 
               src={src} 
-              alt={`Captured image ${index + 1}`} 
+              alt={`Captured ${index + 1}`} 
               style={{ width: '150px', height: 'auto', borderRadius: '10px', border: '2px solid #ccc' }} 
             />
           ))}

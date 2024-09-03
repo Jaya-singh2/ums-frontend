@@ -15,7 +15,7 @@ function Home() {
                   <div className="text-center pt-30 pb-30">
                     <i className="fa fa-user text-white font-64" />
                     <h4 className="text-uppercase mt-20">
-                      <a href="#" className="text-white">
+                      <a href="/#" className="text-white">
                         24 Hours Service
                       </a>
                     </h4>
@@ -27,7 +27,7 @@ function Home() {
                   <div className="text-center pt-30 pb-30">
                     <i className="fa fa-comments-o text-white font-64" />
                     <h4 className="text-uppercase mt-20">
-                      <a href="#" className="text-white">
+                      <a href="/#" className="text-white">
                         Online Help
                       </a>
                     </h4>
@@ -39,7 +39,7 @@ function Home() {
                   <div className="text-center pt-30 pb-30">
                     <i className="fa fa-cc-paypal text-white font-64" />
                     <h4 className="text-uppercase mt-20">
-                      <a href="#" className="text-white">
+                      <a href="/#" className="text-white">
                         Online Payment
                       </a>
                     </h4>
@@ -51,7 +51,7 @@ function Home() {
                   <div className="text-center pt-30 pb-30">
                     <i className="fa fa-mobile text-white font-64" />
                     <h4 className="text-uppercase mt-20">
-                      <a href="#" className="text-white">
+                      <a href="/#" className="text-white">
                         Call +(012) 345 6789
                       </a>
                     </h4>
@@ -97,7 +97,7 @@ function Home() {
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Pariatur, magnam dolore tempore.
                       </p>
-                      <a href="#" className="btn btn-sm btn-theme-colored">
+                      <a href="/#" className="btn btn-sm btn-theme-colored">
                         Read more
                       </a>
                     </div>
@@ -120,7 +120,7 @@ function Home() {
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Pariatur, magnam dolore tempore.
                       </p>
-                      <a href="#" className="btn btn-sm btn-theme-colored">
+                      <a href="/#" className="btn btn-sm btn-theme-colored">
                         Read more
                       </a>
                     </div>
@@ -272,7 +272,7 @@ function Home() {
                 </h2>
                 <div className="icon-box clearfix m-0 p-0 pb-10">
                   <a
-                    href="#"
+                    href="/#"
                     className="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none"
                   >
                     <i className="fa fa-desktop text-theme-color-2 font-36" />
@@ -289,7 +289,7 @@ function Home() {
                 </div>
                 <div className="icon-box clearfix m-0 p-0 pb-10">
                   <a
-                    href="#"
+                    href="/#"
                     className="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none"
                   >
                     <i className="fa fa-user text-theme-color-2 font-36" />
@@ -306,7 +306,7 @@ function Home() {
                 </div>
                 <div className="icon-box clearfix m-0 p-0 pb-10">
                   <a
-                    href="#"
+                    href="/#"
                     className="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none"
                   >
                     <i className="fa fa-money text-theme-color-2 font-36" />
@@ -329,7 +329,7 @@ function Home() {
               data-wow-duration="1s"
               data-wow-delay="0.3s"
             >
-              <img src="Assests/images/photos/ab1.jpg" height="577x"></img>
+              <img src="Assests/images/photos/ab1.jpg" alt="img" height="577x"></img>
             </div>
           </div>
         </div>

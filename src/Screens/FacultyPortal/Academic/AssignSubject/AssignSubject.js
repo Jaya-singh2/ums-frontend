@@ -2,45 +2,16 @@ import React, { useState } from 'react';
 import LayoutWrapper from '../../../../Component/LayoutWrapper/PortalLayoutWrapper.js';
 
 const AssignSubject = () => {
-  const [faculty, setFaculty] = useState([
+  const [faculty] = useState([
     { id: 'F001', name: 'Dr. Alice Johnson', class: 'A', semYear: '1', subject: 'Basic Math', position: 'Professor' , qualification:" Master in CSE", experience:'5 Years'},
     { id: 'F002', name: 'Prof. Bob Smith', class: 'B', semYear: '2', subject: 'C++', position: 'Professor',qualification:" Master in CSE", experience:'5 Years' },
     // Add more faculty members as needed
   ]);
 
   const [selectedFaculty, setSelectedFaculty] = useState(null);
-  const [assignment, setAssignment] = useState({
-    courseName: '',
-    semYear: '',
-    subject: '',
-    position: ''
-  });
 
   const handleViewFaculty = (faculty) => {
     setSelectedFaculty(faculty);
-    setAssignment({
-      courseName: '',
-      semYear: '',
-      subject: '',
-      position: ''
-    });
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setAssignment(prevAssignment => ({
-      ...prevAssignment,
-      [name]: value
-    }));
-  };
-
-  const handleAssignSubject = () => {
-    setFaculty(faculty.map(f => 
-      f.id === selectedFaculty.id
-        ? { ...f, ...assignment }
-        : f
-    ));
-    setSelectedFaculty(null);
   };
 
   return (

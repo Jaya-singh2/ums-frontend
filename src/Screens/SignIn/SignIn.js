@@ -61,7 +61,7 @@ const SignIn = () => {
         </form>
         {/* Remind Passowrd */}
         <div id="formFooter">
-          <a className="underlineHover" href="#">
+          <a className="underlineHover" href="/#">
             Forgot Password?
           </a>
         </div>

@@ -4,14 +4,14 @@ import LayoutWrapper from "../../Component/LayoutWrapper/LayoutWrapper.js";
 import EnrollModal from "./EnrollModal";
 
 const Courses = () => {
-  const [disciplineList, setDisciplineList] = useState([
+  const [disciplineList] = useState([
     "Engineering",
     "Management",
     "Computer Science and Engineering (CSE)",
     "Commerse",
     "Cyber Security",
   ]);
-  const [courses, setCourses] = useState([
+  const [courses] = useState([
     {
       name: "B.Tech. (CSE - Generative Artificial Intelligence)",
       description:
@@ -240,32 +240,32 @@ const Courses = () => {
                   <ul className="pagination xs-pull-center m-0">
                     <li>
                       {" "}
-                      <a href="#" aria-label="Previous">
+                      <a href="/#" aria-label="Previous">
                         {" "}
                         <span aria-hidden="true">«</span>{" "}
                       </a>{" "}
                     </li>
                     <li className="active">
-                      <a href="#">1</a>
+                      <a href="/#">1</a>
                     </li>
                     <li>
-                      <a href="#">2</a>
+                      <a href="/#">2</a>
                     </li>
                     <li>
-                      <a href="#">3</a>
+                      <a href="/#">3</a>
                     </li>
                     <li>
-                      <a href="#">4</a>
+                      <a href="/#">4</a>
                     </li>
                     <li>
-                      <a href="#">5</a>
+                      <a href="/#">5</a>
                     </li>
                     <li>
-                      <a href="#">...</a>
+                      <a href="/#">...</a>
                     </li>
                     <li>
                       {" "}
-                      <a href="#" aria-label="Next">
+                      <a href="/#" aria-label="Next">
                         {" "}
                         <span aria-hidden="true">»</span>{" "}
                       </a>{" "}

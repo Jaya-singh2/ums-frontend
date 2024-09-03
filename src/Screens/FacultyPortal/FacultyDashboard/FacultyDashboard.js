@@ -3,16 +3,6 @@ import PortalLayoutWrapper from "../../../Component/LayoutWrapper/PortalLayoutWr
 
 const FacultyDashboard = () => {
   // Sample data (replace with real data fetching logic)
-  const todayClasses = [
-    { time: "09:00 AM - 10:00 AM", course: "Mathematics", section: "A" },
-    { time: "11:00 AM - 12:00 PM", course: "Physics", section: "B" },
-  ];
-
-  const notifications = [
-    { id: 1, message: "New assignment submission from John Doe." },
-    { id: 2, message: "Leave request approved for Jane Smith." },
-  ];
-
   const stats = {
     classesToday: 2,
     pendingAssignments: 3,

@@ -19,7 +19,7 @@ const Footer = () => {
                 with predefined elements which helps you to build your own site.
                 Lorem ipsum dolor sit amet consectetur.
               </p>
-              <a className="font-14" href="#">
+              <a className="font-14" href="/#">
                 <i className="fa fa-angle-double-right text-theme-colored" />{" "}
                 Read more
               </a>
@@ -87,7 +87,7 @@ const Footer = () => {
                   </a>
                   <div className="post-right">
                     <h5 className="post-title mt-0 mb-5">
-                      <a href="#">Sustainable Construction</a>
+                      <a href="/#">Sustainable Construction</a>
                     </h5>
                     <p className="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
@@ -98,7 +98,7 @@ const Footer = () => {
                   </a>
                   <div className="post-right">
                     <h5 className="post-title mt-0 mb-5">
-                      <a href="#">Industrial Coatings</a>
+                      <a href="/#">Industrial Coatings</a>
                     </h5>
                     <p className="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
@@ -109,7 +109,7 @@ const Footer = () => {
                   </a>
                   <div className="post-right">
                     <h5 className="post-title mt-0 mb-5">
-                      <a href="#">Storefront Installations</a>
+                      <a href="/#">Storefront Installations</a>
                     </h5>
                     <p className="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
@@ -120,7 +120,7 @@ const Footer = () => {
                   </a>
                   <div className="post-right">
                     <h5 className="post-title mt-0 mb-5">
-                      <a href="#">Industrial Coatings</a>
+                      <a href="/#">Industrial Coatings</a>
                     </h5>
                     <p className="post-date mb-0 font-12">Mar 08, 2015</p>
                   </div>
@@ -133,19 +133,19 @@ const Footer = () => {
               <h5 className="widget-title line-bottom">Useful Links</h5>
               <ul className="list angle-double-right list-border">
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="/#">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Donor Privacy Policy</a>
+                  <a href="/#">Donor Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Disclaimer</a>
+                  <a href="/#">Disclaimer</a>
                 </li>
                 <li>
-                  <a href="#">Terms of Use</a>
+                  <a href="/#">Terms of Use</a>
                 </li>
                 <li>
-                  <a href="#">Media Center</a>
+                  <a href="/#">Media Center</a>
                 </li>
               </ul>
             </div>
@@ -155,10 +155,10 @@ const Footer = () => {
               <h5 className="widget-title line-bottom">Quick Contact</h5>
               <ul className="list-border">
                 <li>
-                  <a href="#">+(012) 345 6789</a>
+                  <a href="/#">+(012) 345 6789</a>
                 </li>
                 <li>
-                  <a href="#">hello@yourdomain.com</a>
+                  <a href="/#">hello@yourdomain.com</a>
                 </li>
                 <li>
                   <a href="/#" className="lineheight-20">
@@ -203,7 +203,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-6">
               <p className="font-11 text-black-777 m-0">
-                <a target="_blank" href="https://www.templateshub.net">
+                <a target="_blank" rel="noreferrer" href="https://www.templateshub.net">
                   Templates Hub
                 </a>
               </p>
@@ -212,15 +212,15 @@ const Footer = () => {
               <div className="widget no-border m-0">
                 <ul className="list-inline sm-text-center mt-5 font-12">
                   <li>
-                    <a href="#">FAQ</a>
+                    <a href="/#">FAQ</a>
                   </li>
                   <li>|</li>
                   <li>
-                    <a href="#">Help Desk</a>
+                    <a href="/#">Help Desk</a>
                   </li>
                   <li>|</li>
                   <li>
-                    <a href="#">Support</a>
+                    <a href="/#">Support</a>
                   </li>
                 </ul>
               </div>

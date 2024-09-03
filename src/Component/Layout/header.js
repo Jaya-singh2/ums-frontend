@@ -13,7 +13,7 @@ function Header() {
                   <li className="m-0 pl-10 pr-10">
                     {" "}
                     <i className="fa fa-phone text-white" />{" "}
-                    <a className="text-white" href="#">
+                    <a className="text-white" href="/#">
                       123-456-789
                     </a>{" "}
                   </li>
@@ -25,7 +25,7 @@ function Header() {
                   <li className="m-0 pl-10 pr-10">
                     {" "}
                     <i className="fa fa-envelope-o text-white" />{" "}
-                    <a className="text-white" href="#">
+                    <a className="text-white" href="/#">
                       contact@yourdomain.com
                     </a>{" "}
                   </li>
@@ -36,19 +36,19 @@ function Header() {
               <div className="widget no-border m-0">
                 <ul className="list-inline text-right sm-text-center">
                   <li>
-                    <a href="#" className="text-white">
+                    <a href="/#" className="text-white">
                       FAQ
                     </a>
                   </li>
                   <li className="text-white">|</li>
                   <li>
-                    <a href="#" className="text-white">
+                    <a href="/#" className="text-white">
                       Help Desk
                     </a>
                   </li>
                   <li className="text-white">|</li>
                   <li>
-                    <a href="#" className="text-white">
+                    <a href="/#" className="text-white">
                       Support
                     </a>
                   </li>
@@ -64,7 +64,7 @@ function Header() {
             <nav id="menuzord-right" className="menuzord default">
               <a
                 className="menuzord-brand pull-left flip"
-                href="javascript:void(0)"
+                href="/#"
               >
                 <img src="Assests/images/logo-wide.png" alt="" />
               </a>

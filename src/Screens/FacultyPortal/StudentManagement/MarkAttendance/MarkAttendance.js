@@ -17,15 +17,6 @@ const MarkAttendance = () => {
     });
   };
 
-  const fetchAttendanceData = () => {
-    // Simulate fetching data based on filters
-    const fetchedData = [
-      { rollNumber: '101', studentName: 'John Doe', subjectCode: 'CS101', courseCode: 'CS', semYear: '1st Year', attendanceDate: filters.date, attendance: false },
-      { rollNumber: '102', studentName: 'Jane Smith', subjectCode: 'CS101', courseCode: 'CS', semYear: '1st Year', attendanceDate: filters.date, attendance: false },
-      // Add more data as needed
-    ];
-    setAttendanceData(fetchedData);
-  };
 
   const handleAttendanceChange = (index) => {
     const updatedData = [...attendanceData];

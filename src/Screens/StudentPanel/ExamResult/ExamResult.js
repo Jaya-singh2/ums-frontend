@@ -8,14 +8,9 @@ const ExamResult = () => {
     // Add more terms as needed
   ];
 
-  const [selectedTerm, setSelectedTerm] = useState(terms[0].id);
+  const [selectedTerm] = useState(terms[0].id);
   const [activeTab, setActiveTab] = useState("marks");
 
-  const marks = [
-    { course: "Math", continuousAssessment: 30, midTerm: 25, endTerm: 45 },
-    { course: "Science", continuousAssessment: 35, midTerm: 30, endTerm: 35 },
-    // Add more marks as needed
-  ];
 
   const grades = [
     {
@@ -96,17 +91,6 @@ const ExamResult = () => {
       credit: 1.0,
       grade: "B+",
       termId: 1234,
-    },
-  ];
-
-  const data = [
-    {
-      name: "John Doe",
-      tgpa: "6.05",
-      section: "A",
-      batchYear: "2024",
-      registrationId: "123241",
-      program: "B.Tech CSE",
     },
   ];
 
