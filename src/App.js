@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useNavigate} from "react-router-dom";
 import Home from "./Screens/Home";
 import Courses from "./Screens/Courses";
 import CourseDetails from "./Screens/CourseDetails";
@@ -45,6 +45,7 @@ import AdminAttendanceReport from "./Screens/AdminPanel/AttendanceMangement/Atte
 const App = () => {
   return (
     <Router basename="/ums-frontend">
+      <RedirectHandler />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/signin" element={<SignIn />} />
@@ -93,6 +94,21 @@ const App = () => {
       </Routes>
     </Router>
   );
+};
+
+const RedirectHandler = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const redirect = searchParams.get('redirect');
+
+    if (redirect) {
+      navigate(redirect);
+    }
+  }, [navigate]);
+
+  return null;
 };
 
 export default App;
