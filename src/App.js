@@ -44,7 +44,7 @@ import AdminAttendanceReport from "./Screens/AdminPanel/AttendanceMangement/Atte
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ums-frontend">
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/signin" element={<SignIn />} />
