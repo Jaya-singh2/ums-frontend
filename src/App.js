@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate} from "react-router-dom";
 import Home from "./Screens/Home";
 import Courses from "./Screens/Courses";
