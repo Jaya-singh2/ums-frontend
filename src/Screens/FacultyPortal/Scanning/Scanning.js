@@ -20,16 +20,42 @@ const Scanner = () => {
 
   const generatePDF = async () => {
     const pdf = new jsPDF('p', 'mm', 'a4');
+    const pageWidth = 210; // A4 page width in mm
+    const pageHeight = 297; // A4 page height in mm
+  
     for (let i = 0; i < images.length; i++) {
       const imgData = images[i];
-      const imgWidth = 210; // A4 width in mm
-      const imgHeight = (210 / 1280) * 720; // Maintain image aspect ratio
-
-      if (i !== 0) pdf.addPage();
-      pdf.addImage(imgData, 'JPEG', 0, 0, imgWidth, imgHeight);
+      const img = new Image();
+      img.src = imgData;
+  
+      // Wait for the image to load to get the natural dimensions
+      await new Promise((resolve) => {
+        img.onload = () => {
+          const imgWidth = img.width;
+          const imgHeight = img.height;
+  
+          // Calculate the ratio of the image dimensions to the PDF page dimensions
+          const widthRatio = pageWidth / imgWidth;
+          const heightRatio = pageHeight / imgHeight;
+          const bestRatio = Math.min(widthRatio, heightRatio);
+  
+          // Calculate new dimensions to fit the image inside the page
+          const newWidth = imgWidth * bestRatio;
+          const newHeight = imgHeight * bestRatio;
+  
+          // Center the image on the page
+          const xOffset = (pageWidth - newWidth) / 2;
+          const yOffset = (pageHeight - newHeight) / 2;
+  
+          if (i !== 0) pdf.addPage();
+          pdf.addImage(imgData, 'JPEG', xOffset, yOffset, newWidth, newHeight);
+          resolve();
+        };
+      });
     }
     pdf.save('scanned.pdf');
   };
+  
 
   const toggleCamera = () => {
     setFacingMode((prevMode) => (prevMode === 'user' ? 'environment' : 'user'));
