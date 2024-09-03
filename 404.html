@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=./index.html">
+  <script type="text/javascript">
+    // Get the current path, excluding the origin and "/ums-frontend"
+    var path = window.location.pathname.replace('/ums-frontend', '');
+
+    // Redirect to index.html with the path appended as a query string
+    window.location.href = '/ums-frontend/index.html?redirect=' + path;
+  </script>
 </head>
 <body>
 </body>
