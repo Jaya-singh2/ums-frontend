@@ -1,0 +1,19 @@
+.form-control{
+    height: 35px !important;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.nav-pills li a:hover,
+.nav-pills li.active>a,
+.nav-pills li.active>a:hover,
+.nav-pills li.active>a:focus {
+    background: #1f386b;
+    color: white;
+}
+
+.main-row{
+    background-color: #ede9e9;
+}

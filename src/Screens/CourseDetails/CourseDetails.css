@@ -1,0 +1,31 @@
+   .nav-pills .nav-link {
+       color: white;
+       background-color: #a6aeb8;
+       /* Custom background color */
+       margin-right: 5px;
+   }
+
+   /* .nav-pills .nav-link.active {
+        background: #d3d3d3;
+            color: #777777;
+     
+   } */
+
+   /* src/TermsList.css */
+   .card {
+       padding-bottom: 0 !important;
+   }
+   .card-header {
+       background-color: #007bff;
+       color: white;
+       font-size: 1.25rem;
+   }
+
+   .list-group-item {
+       font-size: 1rem;
+   }
+
+   /* src/FeeTable.css */
+.table {
+  margin-bottom: 0;
+}

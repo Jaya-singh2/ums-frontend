@@ -1,0 +1,10 @@
+.custom-hr {
+    border: none;
+    height: 2px;
+    /* You can adjust the height as needed */
+    background-color: #fff;
+    /* You can change the background color as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 0;
+    /* Adjust the margin as needed */
+}

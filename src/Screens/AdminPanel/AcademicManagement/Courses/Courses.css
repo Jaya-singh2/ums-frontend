@@ -1,0 +1,55 @@
+
+  .table th,
+  .table td {
+    text-align: center;
+  }
+  
+  .table-responsive {
+    margin-top: 20px;
+  }
+
+  .table-row-custom-font {
+    font-size: 13px;
+}
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+
+  form{
+    text-align: left;
+  }
+
+.btn-light-background{
+  background-color: #cfcccc;
+  color: black;
+  padding: 6px 12px;
+  margin: 2px;
+}
+.btn-dark-background{
+  background-color: #1e252c;
+  color: white;
+  padding: 6px 12px;
+}
+.btn-dark-background:hover, .btn-dark-background:focus{
+  color: white;
+}
+
+.hover-table-row:hover{
+  background-color: #cfcccc;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #1f386b;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-header h5, .close{
+  color: white !important;
+}
+
+.single-service{
+  width: 100%;
+}

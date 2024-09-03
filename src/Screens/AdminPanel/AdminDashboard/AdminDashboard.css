@@ -1,0 +1,32 @@
+.main-content {
+    /* padding: 20px; */
+  }
+  
+  .dashboard-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+  
+  .ml-3 {
+    margin-left: 1rem;
+  }
+
+  .card-min-height{
+    min-height: 130px;
+  }
+  .card-width{
+    width: 100%;
+  }

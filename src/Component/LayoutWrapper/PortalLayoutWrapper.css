@@ -1,0 +1,52 @@
+/* App.css */
+.full-screen {
+    /* min-height: 100vh; */
+    background-color: #1f386b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  
+}
+
+.centered-content {
+    width: 100%;
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.child-content {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    /* For two cards per row */
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        /* Full width on small screens */
+    }
+}

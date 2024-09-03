@@ -1,0 +1,21 @@
+/* src/components/AssignmentPage.css */
+
+.upload-section,
+.download-section {
+    margin-bottom: 20px;
+}
+
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
